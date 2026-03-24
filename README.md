@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/1265290601201537024/1486088859413647510/image.png?ex=69c43b9a&is=69c2ea1a&hm=b2a37fe06252019172cafeba2386a22f9dc842519f73300aa0b0a547a073cd9d&=&format=webp&quality=lossless&width=1452&height=864" width="600" />
+</p>
+
 # My Profile
 
 A personal portfolio website that displays profile information on a modern landing page. The frontend fetches data from a REST API at render time and presents it using a clean, section-based layout.
