@@ -1,0 +1,52 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/my-profile-api/my-profile-api/.vs/my-profile-api
+/my-profile-api/my-profile-api/bin/Debug/net8.0
+/my-profile-api/my-profile-api/obj
+/my-profile-api/my-profile-api/my-profile-api.csproj.user
+/my-profile-api/my-profile-api/my-profile-api.http
+/my-profile-api/my-profile-api/appsettings.Development.json
+
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
