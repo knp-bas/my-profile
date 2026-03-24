@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/my-profile-api/my-profile-api/.vs/my-profile-api
+/my-profile-api/my-profile-api/bin/Debug/net8.0
+/my-profile-api/my-profile-api/obj
+/my-profile-api/my-profile-api/my-profile-api.csproj.user
+/my-profile-api/my-profile-api/my-profile-api.http
+/my-profile-api/my-profile-api/appsettings.Development.json
