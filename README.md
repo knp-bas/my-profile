@@ -96,21 +96,27 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 my-profile/
   my-profile-api/          # C# .NET 8 REST API
     my-profile-api/
+      Domain/
+        Entities/
+          Profile.cs             # Pure domain models (ProfileResponse, ContactInfo, ...)
+      Application/
+        Interfaces/
+          IProfileService.cs     # Service abstraction
+        Services/
+          ProfileService.cs      # Mock data + business logic
       Controllers/
-        ProfileController.cs   # GET /api/profile
-      Models/
-        Profile.cs             # Response model classes
-      Program.cs               # App setup + CORS
+        ProfileController.cs     # GET /api/profile — slim, injects IProfileService
+      Program.cs                 # App setup, CORS, DI registration
   my-profile-ui/           # Next.js frontend
     app/
       components/
-        ProfileView.tsx        # Root client component
-        sections/              # Page sections (Hero, About, Experience, ...)
-        ui/                    # Shared UI components (SectionHeading, ContactItem)
+        ProfileView.tsx          # Root client component (thin orchestrator)
+        sections/                # Page sections (NavBar, Hero, About, Experience, ...)
+        ui/                      # Shared UI components (SectionHeading, ContactItem)
       lib/
-        theme.ts               # Ant Design theme + color constants
+        theme.ts                 # Ant Design theme + color constants
       types/
-        profile.ts             # TypeScript interfaces
-      page.tsx                 # Server component — fetches profile data
-      layout.tsx               # Root layout with AntdRegistry
+        profile.ts               # TypeScript interfaces
+      page.tsx                   # Server component — fetches profile data
+      layout.tsx                 # Root layout with AntdRegistry
 ```

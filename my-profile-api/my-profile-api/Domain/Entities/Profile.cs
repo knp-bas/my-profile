@@ -1,4 +1,4 @@
-namespace my_profile_api.Models;
+namespace my_profile_api.Domain.Entities;
 
 public class ProfileResponse
 {

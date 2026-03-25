@@ -1,3 +1,6 @@
+using my_profile_api.Application.Interfaces;
+using my_profile_api.Application.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddCors(options =>
@@ -10,6 +13,7 @@ builder.Services.AddCors(options =>
     });
 });
 
+builder.Services.AddScoped<IProfileService, ProfileService>();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
